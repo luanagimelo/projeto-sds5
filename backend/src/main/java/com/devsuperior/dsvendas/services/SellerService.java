@@ -13,6 +13,7 @@ import com.devsuperior.dsvendas.repositories.SellerRepository;
 @Service
 public class SellerService {
 
+
 	@Autowired
 	private SellerRepository repository;
 	public List<SellerDTO> findAll(){
@@ -20,3 +21,4 @@ public class SellerService {
 		return result.stream().map(x -> new SellerDTO(x)).collect(Collectors.toList());
 	}
 }
+
